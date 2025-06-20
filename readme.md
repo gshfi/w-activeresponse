@@ -81,3 +81,12 @@ C:\Program Files (x86)\ossec-agent\active-response\bin\
 2025/06/20 15:37:02 wazuh-applocker.exe: [DEBUG] Extracted: version=1, origin.name=node01, command=add, parameters.command=add, parameters.alert.id=1750427242.11682046 ...
 2025/06/20 15:37:02 wazuh-applocker.exe: [INFO] AppLocker AR completed
 ```
+
+## 📁 Bestanden
+
+| Bestand              | Beschrijving                             |
+|----------------------|------------------------------------------|
+| `wazuh-applocker.py` | De active-response script                |
+| `wazuh-applocker.exe`| De gecompileerde versie                  |
+| `alert-dump.json`    | Originele JSON input van Wazuh           |
+| `parsed-dump.json`   | Flattened JSON (alle velden toegankelijk)|
