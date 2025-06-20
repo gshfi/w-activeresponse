@@ -1,0 +1,101 @@
+{
+    "version": 1,
+    "origin": {
+        "name": "redacted",
+        "module": "wazuh-execd"
+    },
+    "command": "add",
+    "parameters": {
+        "extra_args": [],
+        "alert": {
+            "timestamp": "redacted",
+            "rule": {
+                "level": 12,
+                "description": "High Priority: Unauthorized WHOAMI Execution Detected.",
+                "id": "100000",
+                "mitre": {
+                    "id": [
+                        "redacted"
+                    ],
+                    "tactic": [
+                        "redacted"
+                    ],
+                    "technique": [
+                        "redacted"
+                    ]
+                },
+                "firedtimes": 9,
+                "mail": false,
+                "groups": [
+                    "customrules",
+                    "sysmon_event1",
+                    "powershell_execution"
+                ]
+            },
+            "agent": {
+                "id": "018",
+                "name": "redacted",
+                "ip": "redacted",
+                "labels": {
+                    "group": "groupname"
+                }
+            },
+            "manager": {
+                "name": "redacted"
+            },
+            "id": "redacted",
+            "full_log": "redacted",
+            "decoder": {
+                "name": "redacted"
+            },
+            "data": {
+                "win": {
+                    "system": {
+                        "providerName": "redacted",
+                        "providerGuid": "redacted",
+                        "eventID": "redacted",
+                        "version": "redacted",
+                        "level": "redacted",
+                        "task": "redacted",
+                        "opcode": "0",
+                        "keywords": "redacted",
+                        "systemTime": "redacted",
+                        "eventRecordID": "redacted",
+                        "processID": "redacted",
+                        "threadID": "redacted",
+                        "channel": "redacted",
+                        "computer": "redacted",
+                        "severityValue": "redacted",
+                        "message": "redacted"
+                    },
+                    "eventdata": {
+                        "utcTime": "redacted",
+                        "processGuid": "redacted",
+                        "processId": "redacted",
+                        "image": "redacted",
+                        "fileVersion": "redacted",
+                        "description": "redacted",
+                        "product": "redacted",
+                        "company": "redacted",
+                        "originalFileName": "redacted",
+                        "commandLine": "redacted",
+                        "currentDirectory": "redacted",
+                        "user": "redacted",
+                        "logonGuid": "redacted",
+                        "logonId": "redacted",
+                        "terminalSessionId": "redacted",
+                        "integrityLevel": "redacted",
+                        "hashes": "redacted",
+                        "parentProcessGuid": "redacted",
+                        "parentProcessId": "redacted",
+                        "parentImage": "redacted",
+                        "parentCommandLine": "redacted",
+                        "parentUser": "redacted"
+                    }
+                }
+            },
+            "location": "redacted"
+        },
+        "program": "active-response/bin/wazuh-applocker.exe"
+    }
+}
