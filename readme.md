@@ -6,9 +6,9 @@ Testen hoe we effectief een eigen `active-response` kunnen configureren binnen W
 
 ---
 
-## 🧱 Stap 1: Configureer de Wazuh-server
+### 🧱 Stap 1: Configureer de Wazuh-server
 
-### 1.1 Voeg een custom command toe aan `ossec.conf`
+#### 1.1 Voeg een custom command toe aan `ossec.conf`
 
 Plaats het volgende blok bij andere `<command>` entries:
 
@@ -20,7 +20,7 @@ Plaats het volgende blok bij andere `<command>` entries:
 </command>
 ```
 
-### 1.2 Voeg een active-response toe
+#### 1.2 Voeg een active-response toe
 
 Plaats het volgende blok binnen '<active-response>':
 
@@ -33,7 +33,7 @@ Plaats het volgende blok binnen '<active-response>':
 </active-response>
 ```
 
-# 🧩 Stap 2: Configureer de Wazuh-agent
+### 🧩 Stap 2: Configureer de Wazuh-agent
 
 Pas het configuratiebestand aan op de agent:
 
@@ -49,11 +49,11 @@ logcollector.remote_commands=1
 
 Herstart daarna de Wazuh-agent.
 
-# Stap 3: Python-script voor Active Response
+### Stap 3: Python-script voor Active Response
 
-Download het volgende script op als wazuh-applocker.py
+Download het volgende script op als 'wazuh-applocker.py'
 
-# Stap 4: Compileer naar .exe
+### Stap 4: Compileer naar .exe
 
 Gebruik pyinstaller:
 ```
@@ -64,7 +64,7 @@ Kopieer de .exe naar:
 C:\Program Files (x86)\ossec-agent\active-response\bin\
 ```
 
-# Stap 5: Test/Trigger je active-response
+### Stap 5: Test/Trigger je active-response
 
 1. Herstart de Wazuh-agent op de target host.
 2. Trigger een alert (bijv. met whoami.exe of PowerShell).
@@ -75,7 +75,7 @@ C:\Program Files (x86)\ossec-agent\active-response\bin\
 
 !Zie je geen output? Restart de agent handmatig opnieuw.
 
-## Voorbeeld output
+### Voorbeeld output
 ```
 2025/06/20 15:36:26 wazuh-applocker.exe: [INFO] AppLocker AR started  
 2025/06/20 15:37:02 wazuh-applocker.exe: [DEBUG] Extracted: version=1, origin.name=node01, command=add, parameters.command=add, parameters.alert.id=1750427242.11682046 ...
