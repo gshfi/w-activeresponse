@@ -57,7 +57,7 @@ Download het volgende script op als 'wazuh-applocker.py'
 
 Gebruik pyinstaller:
 ```
-python -m PyInstaller --clean --onefile wazuh-applocker.py
+python -m PyInstaller --clean --icon=reply.ico --onefile wazuh-applocker.py
 ```
 Kopieer de .exe naar:
 ```
